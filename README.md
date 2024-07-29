@@ -1,1 +1,1 @@
-# AI-motivation
+# 동기부여 코치 AI-M
