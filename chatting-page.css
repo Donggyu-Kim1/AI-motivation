@@ -1,0 +1,67 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('motivation-background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.message {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.ai-message {
+    flex-direction: row;
+}
+.user-message {
+    flex-direction: row-reverse;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.message-content {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 15px;
+    max-width: 70%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.user-input {
+    display: flex;
+    margin-top: 20px;
+}
+.user-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.user-input button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
