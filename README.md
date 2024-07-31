@@ -32,6 +32,6 @@ gantt
 [피그마 링크](https://www.figma.com/design/pJDMri393hCWavvNmTVN0E/AIM?node-id=0-1&t=GxYUCK5Ys65OCrY9-1)
 
 ## 구현
-[프로그램 링크](donggyu-kim1.github.io/AI-motivation/)
+[프로그램 링크](https://donggyu-kim1.github.io/AI-motivation/)
 
 ## 시연 영상
