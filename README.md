@@ -12,8 +12,7 @@ gantt
     dateFormat  YYYY-MM-DD
     section 프로젝트 준비
     리포지토리 생성       :2023-07-29, 1d
-    아이디어 기획         :2023-07-29, 1d<img width="908" alt="AI-M 와이어프레임" src="https://github.com/user-attachments/assets/8bc734b2-8cba-434e-8a83-04cd39a4ba6a">
-
+    아이디어 기획         :2023-07-29, 1d
     와이어 프레임         :2023-07-29, 1d
     기본 UI 구현          :2023-07-29, 1d
     section AI 연동 및 구현
