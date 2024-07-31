@@ -8,22 +8,22 @@
 ## WBS
 ```mermaid
 gantt
-  title Chat-GPT 연동 동기부여 서비스 WBS
-  dateFormat  YYYY-MM-DD
-  axisFormat %Y-%m-%d
-  section 프로젝트 준비
-  아이디어 기획         :2023-07-29, 6h
-  리포지토리 생성       :after 아이디어 기획, 6h
-  와이어 프레임         :after 리포지토리 생성, 6h
-  기본 UI 구현          :after 와이어 프레임, 6h
-  section AI 연동 및 구현
-  AI API 연동 (JS)      :after 기본 UI 구현, 12h
-  결과 표시 기능 구현 (JS) :after AI API 연동 (JS), 12h
-  section 마무리
-  공개 URL 생성         :after 결과 표시 기능 구현 (JS), 6h
-  README 파일 작성      :after 공개 URL 생성, 6h
-  section 프로젝트 기한
-  프로젝트 완료         :milestone, 2023-08-01
+    title Chat-GPT 연동 동기부여 서비스 WBS
+    dateFormat YYYY-MM-DD
+    axisFormat %Y-%m-%d
+    section 프로젝트 준비
+    아이디어 기획         :a1, 2023-07-29, 6h
+    리포지토리 생성       :a2, after a1, 6h
+    와이어 프레임         :a3, after a2, 6h
+    기본 UI 구현          :a4, after a3, 6h
+    section AI 연동 및 구현
+    AI API 연동 (JS)      :b1, after a4, 12h
+    결과 표시 기능 구현 (JS) :b2, after b1, 12h
+    section 마무리
+    공개 URL 생성         :c1, after b2, 6h
+    README 파일 작성      :c2, after c1, 6h
+    section 프로젝트 기한
+    프로젝트 완료         :milestone, after c2, 0d
 ```
 
 ## 와이어프레임
