@@ -13,15 +13,15 @@ gantt
   axisFormat %Y-%m-%d
   section 프로젝트 준비
     아이디어 기획         :2023-07-29, 6h
-    리포지토리 생성       :2023-07-29, 6h
-    와이어 프레임         :2023-07-29, 6h
-    기본 UI 구현          :2023-07-29, 6h
+    리포지토리 생성       :after 아이디어 기획, 6h
+    와이어 프레임         :after 리포지토리 생성, 6h
+    기본 UI 구현          :after 와이어 프레임, 6h
   section AI 연동 및 구현
-    AI API 연동 (JS)      :2023-07-30, 12h
-    결과 표시 기능 구현 (JS) :2023-07-30, 12h
+    AI API 연동 (JS)      :after 기본 UI 구현, 12h
+    결과 표시 기능 구현 (JS) :after AI API 연동 (JS), 12h
   section 마무리
-    공개 URL 생성         :2023-07-31, 6h
-    README 파일 작성      :2023-07-31, 6h
+    공개 URL 생성         :after 결과 표시 기능 구현 (JS), 6h
+    README 파일 작성      :after 공개 URL 생성, 6h
   section 프로젝트 기한
     프로젝트 완료         :milestone, 2023-08-01
 ```
