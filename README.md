@@ -27,7 +27,7 @@ gantt
 ```
 
 ## 와이어프레임
-<img width="908" alt="AI-M 와이어프레임" src="https://github.com/user-attachments/assets/320915eb-1b3b-48b7-8ff0-3808f1222a77">
+<img width="911" alt="wireframe" src="https://github.com/user-attachments/assets/e39dd143-bf47-42e6-9825-f68a19d53aff">
 
 [피그마 링크](https://www.figma.com/design/pJDMri393hCWavvNmTVN0E/AIM?node-id=0-1&t=GxYUCK5Ys65OCrY9-1)
 
