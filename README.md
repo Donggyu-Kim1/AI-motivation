@@ -48,15 +48,47 @@ gantt
 
 ## 구현
 ### HTML
+- HTML
+    - 첫 페이지
+        - form 형태의 컨테이너 구성
+        - textarea로 현재 상태에 관한 부분은 여러 줄 작성할 수 있게 함
+        - 동기부여 받기 버튼
+    - 채팅 페이지
+        - ai 채팅, 사용자 채팅, 전송 버튼으로 구성
 
 ### CSS
+- CSS
+    - 첫 페이지
+        - backgroud-size: cover, z-index: -1으로 화면에 맞게 사진 배치
+        - 타이틀을 중앙에 배치하고 그 옆에 아이콘을 넣기 위해 top: 50%, translateY(50%)로 위치 조절
+    - 채팅 페이지
+        - 각 메세지 사이에 20px의 여백을 둠
+        - ai 메세지는 왼쪽에서 시작하여 오른쪽으로 표시
+        - 사용자 메세지는 row-reverse로 오른쪽에서 시작하여 왼쪽으로 표시
 
 ### JS
+- JS
+    - 첫 페이지
+        - 앞에 form을 id를 넣고 form이 제출될 때 함수 실행
+        - formData에 각각의 질문에 입력한 값을 객체에 저장
+        - formData를 JSON 문자열로 변환하여 motivationData 키에 저장
+        - 제출 후 chatting-page로 이동
+    - 채팅 페이지
+        - 이전에 저장한 데이터를 로컬 스토리지에 불러와 저장
+        - chat-gpt api를 호출하여 AI 응답을 받음
+        - 요청 실패 처리
+        - 삼항 연산자를 통해 true 면 ai 채팅, false면 사용자 채팅
+        - 채팅 컨테이너를 스크롤 높이와 동일하게 하여 채팅이 생성될 때 자동으로 스크롤이 내려갑니다.
+        - 이전에 저장한 form 데이터를 프롬프트에 입력 후 대답양식에 맞게 호출
+        - 어조를 system role에 직접 저장
+        - 'q'나 '종료'를 입력 시 첫 페이지로 이동
 
 [프로그램 링크](https://donggyu-kim1.github.io/AI-motivation/)
 
 ## 에러 및 해결 방안
-
+1. 통신 에러 발생: 받는 값은 딕셔너리 형태인데 호출함수로 prompt만 입력했음 -> messages 변수를 만들어 딕셔너리 형태로 하여 값을 받음
+2. 제목 중앙정렬: flex로 묶을 시 text가 왼쪽으로 치우침 -> 따로 아이콘을 위치를 지정함
+3. 대화 중 답장 시 말투 풀림: 이후 메세지에 롤 지정을 하지 않음 -> 이후 메세지에도 system role에 말투를 받을 수 있게 적용
 
 ## 시연 영상
 ![program-video](https://github.com/user-attachments/assets/ed346331-566e-4d94-b4b6-9b2e90e15407)
